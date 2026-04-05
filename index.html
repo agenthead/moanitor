@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moanitor — Your PC has feelings too</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="Moanitor Logo">
+                <span>Moanitor</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#faq">FAQ</a>
+                <div class="kofi-nav-cell">
+                    <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+                    <script
+                        type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#e84393', 'A0A01WA0TW'); kofiwidget2.draw();</script>
+                </div>
+                <a href="#" class="nav-btn primary">Download</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="badge">Windows version of Moanitor</div>
+            <h1>Moanitor</h1>
+            <p class="tagline">Your PC has feelings too. It screams when it's hot. It moans when it's plugged.
+                <strong>100% Free. Forever.</strong>
+            </p>
+            <div class="hero-btns">
+                <a href="#" class="btn primary">Download Moanitor — Free</a>
+                <a href="#features" class="btn secondary">View Roadmap</a>
+            </div>
+            <div class="version-info">Windows 10/11 • 34MB Standalone • <strong>Multi-character support (Coming
+                    Soon)</strong></div>
+            <div class="hero-image" id="hero-mascot-container">
+                <img src="hero.png" alt="Moanica Sticker Mascot" id="hero-mascot">
+
+                <!-- Interactive Hotspots -->
+                <div class="hotspot hotspot-heat" onclick="simulate('heat')" title="Simulate Overheat"></div>
+                <div class="hotspot hotspot-plug" onclick="simulate('plug')" title="Simulate Plug/Unplug"></div>
+                <div class="hotspot hotspot-battery" onclick="simulate('battery')" title="Simulate Low Battery"></div>
+
+                <!-- Feedback Bubble -->
+                <div id="sim-bubble" class="sim-bubble">Click my stickers! 💋</div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <div class="container">
+            <p class="section-label">FEATURES</p>
+            <h2>More fun than your antivirus</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="f-icon">💋</div>
+                    <h3>Moan-ica Mode</h3>
+                    <p>Experience system alerts like never before. Seductive, flirty, and a bit much.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="f-icon">⚙️</div>
+                    <h3>System Tray</h3>
+                    <p>No bulky windows. Lurks silently in your tray. Low resources, high vibes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="f-icon">🔌</div>
+                    <h3>USB Moaner</h3>
+                    <p>Reacts smartly when you connect or disconnect a device. You're welcome.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="f-icon">🌡️</div>
+                    <h3>Smart Thrills</h3>
+                    <p>Won't spam you. Smart cooldowns keep the moans special and timely.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="f-icon">🔋</div>
+                    <h3>Battery Aware</h3>
+                    <p>Gently reminds you to plug in when it feels a bit... empty.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="f-icon">🎙️</div>
+                    <h3>Smart Silence</h3>
+                    <p>Detects when you're in a meeting or using your mic. Moanitor goes silent automatically to keep
+                        things professional. We never hear your conversations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="f-icon">📦</div>
+                    <h3>Zero Install</h3>
+                    <p>Single EXE. No bloat. Just download and run. It's that simple.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <p class="section-label">FAQ</p>
+            <h2>Common questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-q">Will it moan during a meeting?</div>
+                    <div class="faq-a">Nope! Our <strong>Smart Silence</strong> technology detects when your microphone
+                        is in use and mutes itself automatically. You stay professional, we stay silent.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">Does it work without admin?</div>
+                    <div class="faq-a">Yes, but hardware temperature reading requires admin privileges on most systems.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">Is it a virus?</div>
+                    <div class="faq-a">No, it's just a lonely piece of software that wants to feel connected to your
+                        hardware.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">Can I add my own sounds?</div>
+                    <div class="faq-a">Not yet, but we're working on it! Your support helps us get there faster.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="support" class="support-banner">
+        <div class="container text-center">
+            <h2>Let's keep the moans free.</h2>
+            <p>Moanitor is a passion project built for the vibes. We don't believe in subscriptions or paywalls. Your
+                support on Ko-fi helps cover costs and fuels the development of new features like
+                <strong>Multi-Character Logic</strong> and <strong>Custom Hotkeys</strong>.
+            </p>
+            <div class="kofi-banner-preview">
+                <a href="https://ko-fi.com/A0A01WA0TW" target="_blank">
+                    <img src="kofi-cover.png" alt="Moanitor Ko-fi Page" class="kofi-banner-img">
+                </a>
+            </div>
+            <div class="support-cta">
+                <div class="kofi-footer-cell">
+                    <script
+                        type='text/javascript'>kofiwidget2.init('Keep Moanitor Free', '#e84393', 'A0A01WA0TW'); kofiwidget2.draw();</script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Moanitor. Built by the community, for the community.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
