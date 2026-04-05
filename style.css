@@ -353,7 +353,127 @@ h2 {
     font-weight: 600;
 }
 
-/* Responsive */
+.tray-highlight {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 6rem 2rem;
+    background: #fdfdfd;
+    border-radius: var(--radius);
+    margin-top: -2rem;
+    position: relative;
+    z-index: 10;
+}
+
+.tray-content { flex: 1.2; text-align: left; }
+.tray-image { flex: 0.8; text-align: center; }
+
+.tray-description {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    margin: 1.5rem 0 2.5rem;
+    line-height: 1.7;
+}
+
+.tray-stats {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.stat {
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+}
+
+.stat-icon { margin-right: 0.5rem; }
+
+.physical-sticker-wrap {
+    display: flex;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.kawaii-tray-sticker {
+    background: #1a1a2e;
+    padding: 2rem;
+    border-radius: 2.5rem;
+    border: 12px solid #fff;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.12), 0 10px 20px rgba(0,0,0,0.08);
+    transform: rotate(3deg);
+    transition: var(--transition);
+    max-width: 320px;
+    position: relative;
+}
+
+.kawaii-tray-sticker:hover {
+    transform: rotate(0deg) translateY(-10px);
+}
+
+.st-header {
+    color: var(--primary);
+    font-weight: 800;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.st-body {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.st-lips {
+    width: 64px;
+    height: 64px;
+    filter: drop-shadow(0 0 15px rgba(232, 67, 147, 0.4));
+}
+
+.st-tooltip-bubble {
+    background: rgba(255,255,255,0.05);
+    padding: 0.85rem 1.15rem;
+    border-radius: 1.25rem;
+    text-align: left;
+    border: 1px solid rgba(232, 67, 147, 0.2);
+}
+
+.st-label {
+    color: #fff;
+    font-weight: 800;
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.st-values {
+    color: #9CA3AF;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.st-footer {
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.1rem;
+    background: rgba(255,255,255,0.05);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+}
+
+@media (max-width: 768px) {
+    .tray-highlight { flex-direction: column; text-align: center; gap: 4rem; }
+    .tray-content { text-align: center; }
+    .tray-stats { justify-content: center; }
+}
+
 @media (max-width: 1024px) {
     .features-grid {
         grid-template-columns: repeat(2, 1fr);
