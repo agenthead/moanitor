@@ -10,6 +10,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="logo.png">
+    <link rel="shortcut icon" href="logo.png" type="image/png">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BV762JN5YG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BV762JN5YG');
+    </script>
 </head>
 
 <body>
@@ -27,7 +38,7 @@
                     <script
                         type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#e84393', 'A0A01WA0TW'); kofiwidget2.draw();</script>
                 </div>
-                <a href="#" class="nav-btn primary">Download</a>
+                <a href="#" onclick="trackDownload()" class="nav-btn primary">Download</a>
             </div>
         </div>
     </nav>
@@ -40,7 +51,7 @@
                 <strong>100% Free. Forever.</strong>
             </p>
             <div class="hero-btns">
-                <a href="#" class="btn primary">Download Moanitor — Free</a>
+                <a href="#" onclick="trackDownload()" class="btn primary">Download Moanitor — Free</a>
                 <a href="#features" class="btn secondary">View Roadmap</a>
             </div>
             <div class="version-info">Windows 10/11 • 34MB Standalone • <strong>Multi-character support (Coming

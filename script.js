@@ -107,3 +107,13 @@ function simulate(type) {
 
 // Start everything
 document.addEventListener('DOMContentLoaded', startIdleRotation);
+
+// Analytics Tracking
+function trackDownload() {
+    if (typeof gtag === 'function') {
+        gtag('event', 'download', {
+            'event_category': 'engagement',
+            'event_label': 'Moanitor EXE'
+        });
+    }
+}
